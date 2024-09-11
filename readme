@@ -15,37 +15,8 @@ Keyword Extraction: Uses tools like RAKE (Rapid Automatic Keyword Extraction) to
 Front-End Development: Built with JavaScript, offering a user-friendly Chrome extension interface.
 Backend: Developed using FastAPI for API handling.
 Setup Instructions
-Clone the repository:
-bash
-Copy code
-git clone <repository-url>
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Set up the Chrome extension:
-Open Chrome and go to chrome://extensions/
-Enable Developer Mode.
-Load the extension by selecting the extension/ folder from the repository.
-Run the FastAPI backend:
-bash
-Copy code
-uvicorn main:app --reload
-Usage
-Open a YouTube video and the KTV extension will provide insights about the comments.
-Use the chatbot to ask questions about the video content based on viewer feedback.
-Scalability
-Sentiment Model: Can be enhanced using larger datasets for better accuracy.
-New Features: Potential for adding video recommendations and analytics.
-Cloud Integration: The current setup works locally but can be easily moved to cloud services for scaling.
-Legal Considerations
-Ensure compliance with YouTube's API policies and data privacy laws (GDPR).
-Target Audience
-YouTube viewers, content creators, educators, and marketers looking for quick insights into video content.
-Contributors
-Priyansh Pachauri
-Tanay Sharma
-Vaibhav Raj
-Pranav Pande
-License
-This project is licensed under the MIT License.
+Prerequisites
+Python 3.8+
+Chrome browser with Developer mode enabled
+FastAPI for the backend API
+YouTube API access
