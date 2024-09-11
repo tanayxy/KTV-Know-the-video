@@ -1,0 +1,51 @@
+KTV (Know The Video) Chrome Extension
+Introduction
+KTV is a Chrome extension that analyzes YouTube video comments to help users assess whether a video is worth watching. It provides sentiment analysis, comment summaries, and keyword extractions, giving users insights into the video without watching it.
+
+Features
+Sentiment Analysis: Classifies YouTube comments into Positive, Negative, or Neutral sentiments.
+Summary: Generates a summarized remark from all comments to highlight viewer opinions.
+Keyword Extraction: Displays essential keywords from the comments.
+Chatbot: Answers user queries based on the comment analysis and summary.
+Technical Approach
+Data Collection: Uses the YouTube API to fetch comments from videos.
+Sentiment Analysis: Leverages machine learning models like twitter-roberta-base-sentiment from Hugging Face.
+Chatbot: A trained bot that responds to user queries based on the comment data.
+Keyword Extraction: Uses tools like RAKE (Rapid Automatic Keyword Extraction) to extract key terms.
+Front-End Development: Built with JavaScript, offering a user-friendly Chrome extension interface.
+Backend: Developed using FastAPI for API handling.
+Setup Instructions
+Clone the repository:
+bash
+Copy code
+git clone <repository-url>
+Install the required dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Set up the Chrome extension:
+Open Chrome and go to chrome://extensions/
+Enable Developer Mode.
+Load the extension by selecting the extension/ folder from the repository.
+Run the FastAPI backend:
+bash
+Copy code
+uvicorn main:app --reload
+Usage
+Open a YouTube video and the KTV extension will provide insights about the comments.
+Use the chatbot to ask questions about the video content based on viewer feedback.
+Scalability
+Sentiment Model: Can be enhanced using larger datasets for better accuracy.
+New Features: Potential for adding video recommendations and analytics.
+Cloud Integration: The current setup works locally but can be easily moved to cloud services for scaling.
+Legal Considerations
+Ensure compliance with YouTube's API policies and data privacy laws (GDPR).
+Target Audience
+YouTube viewers, content creators, educators, and marketers looking for quick insights into video content.
+Contributors
+Priyansh Pachauri
+Tanay Sharma
+Vaibhav Raj
+Pranav Pande
+License
+This project is licensed under the MIT License.
