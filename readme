@@ -1,22 +1,31 @@
-KTV (Know The Video) Chrome Extension
-Introduction
+# KTV (Know The Video) Chrome Extension
+
+## Introduction
 KTV is a Chrome extension that analyzes YouTube video comments to help users assess whether a video is worth watching. It provides sentiment analysis, comment summaries, and keyword extractions, giving users insights into the video without watching it.
 
-Features
-Sentiment Analysis: Classifies YouTube comments into Positive, Negative, or Neutral sentiments.
-Summary: Generates a summarized remark from all comments to highlight viewer opinions.
-Keyword Extraction: Displays essential keywords from the comments.
-Chatbot: Answers user queries based on the comment analysis and summary.
-Technical Approach
-Data Collection: Uses the YouTube API to fetch comments from videos.
-Sentiment Analysis: Leverages machine learning models like twitter-roberta-base-sentiment from Hugging Face.
-Chatbot: A trained bot that responds to user queries based on the comment data.
-Keyword Extraction: Uses tools like RAKE (Rapid Automatic Keyword Extraction) to extract key terms.
-Front-End Development: Built with JavaScript, offering a user-friendly Chrome extension interface.
-Backend: Developed using FastAPI for API handling.
-Setup Instructions
-Prerequisites
-Python 3.8+
-Chrome browser with Developer mode enabled
-FastAPI for the backend API
-YouTube API access
+## Features
+- **Sentiment Analysis**: Classifies YouTube comments into Positive, Negative, or Neutral sentiments.
+- **Summary**: Generates a summarized remark from all comments to highlight viewer opinions.
+- **Keyword Extraction**: Displays essential keywords from the comments.
+- **Chatbot**: Answers user queries based on the comment analysis and summary.
+
+## Technical Approach
+1. **Data Collection**: Uses the YouTube API to fetch comments from videos.
+2. **Sentiment Analysis**: Leverages machine learning models like `twitter-roberta-base-sentiment` from Hugging Face.
+3. **Chatbot**: A trained bot that responds to user queries based on the comment data.
+4. **Keyword Extraction**: Uses tools like RAKE (Rapid Automatic Keyword Extraction) to extract key terms.
+5. **Front-End Development**: Built with JavaScript, offering a user-friendly Chrome extension interface.
+6. **Backend**: Developed using FastAPI for API handling.
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Chrome browser with Developer mode enabled
+- FastAPI for the backend API
+- YouTube API access
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
